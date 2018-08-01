@@ -1,0 +1,22 @@
+{
+  "name": "femdevsonly",
+  "version": "1.0.0",
+  "description": "Group Project #3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NewAgeAirbender/FemDevsOnly.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NewAgeAirbender/FemDevsOnly/issues"
+  },
+  "homepage": "https://github.com/NewAgeAirbender/FemDevsOnly#readme",
+  "dependencies": {
+    "yarn": "^1.9.2"
+  }
+}
