@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/NewAgeAirbender/FemDevsOnly#readme",
   "dependencies": {
+    "react": "^16.4.2",
     "yarn": "^1.9.2"
   }
 }
