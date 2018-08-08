@@ -1,6 +1,40 @@
 .App {
   text-align: center;
+  font-family: 'Arya', sans-serif;
+
 }
+
+.App {
+	position: relative;
+	background-color: #7CCBF2;
+}
+
+.App::before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #7CCBF2;
+	transform-origin: top left;
+	transform: skewY(-3deg);
+	z-index: -10;
+}
+
+.App::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #7CCBF2;
+	transform-origin: bottom left;
+	transform: skewY(3deg);
+	z-index: -10;
+}
+
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
