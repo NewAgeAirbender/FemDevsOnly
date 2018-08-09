@@ -3,9 +3,8 @@ const Schema = mongoose.Schema;
 
 const quoteSchema = new Schema({
   content: { type: String, required: true },
-  votes: Number,
-  isAppropriate: Boolean,
-  date: { type: Date, default: Date.now }
+  votes: { type: Number, default: 0 },
+  isAppropriate: { type: Boolean, default: true }
 });
 
 const Quote = mongoose.model("Quote", quoteSchema);
