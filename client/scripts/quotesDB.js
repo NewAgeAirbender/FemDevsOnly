@@ -1,6 +1,8 @@
 const mongoose = require("mongoose");
 const db = require("../models");
 
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/femdevonly_db");
+
 [
     {
         "content": "'You're really cute for an engineer'",
