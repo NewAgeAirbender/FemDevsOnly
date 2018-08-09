@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import './App.css';
-import Quote from './components/Quote';
+import Landing from './components/Quote';
+
 
 class App extends Component {
   render() {
@@ -10,21 +11,7 @@ class App extends Component {
         <Container tag="asymmetric">
           <Row>
             <Col>
-            {this.state.quotes.length ? (
-              <List>
-                {this.state.quotes.map(quote) => (
-                  <Quote key={quote._id}>
-                    <Link to={"/quotes/" + book._id}>
-                      <strong>
-                        {quote.content}
-                      </strong>
-                    </Link>
-                  </Quote>
-                ))}
-              </List>
-            ) : (
-              <h3>No Results to Display</h3>
-            )}
+                  <Landing />
             </Col>
           </Row>
         </Container>
