@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
-const db = require("../models");
+const db = require("../../..models");
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/femdevonly_db");
 
-[
+const quotesSeed = [
     {
         "content": "'You're really cute for an engineer'",
         "votes": 0,
@@ -29,7 +29,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/femdevonly_db")
         "votes": 0,
         "isAppropriate": true
     }
-]
+];
 
 db.Quote
     .remove({})
