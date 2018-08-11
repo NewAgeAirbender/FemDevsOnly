@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import "./Landing.css";
+import "./quote.css";
 import { Jumbotron, Button, Container, Row, Col } from 'reactstrap';
-import quotes from "../../quotes.json";
+import quotes from "../../../scripts/quotesDB.js";
 
 class Landing extends Component {
     state = {
