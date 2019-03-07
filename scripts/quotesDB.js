@@ -1,18 +1,18 @@
 const mongoose = require("mongoose");
-const db = require("../../..models");
+const db = require("../models");
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/femdevonly_db");
 
 const quotesSeed = [
     {
-        "content": "'You're really cute for an engineer'",
-        "votes": 0,
-        "isAppropriate": true
+        content: "'You're really cute for an engineer'",
+        votes: 0,
+        isAppropriate: true
     },
     {
-        "content": "'Wow! You're pretty good at this for a woman!'",
-        "votes": 0,
-        "isAppropriate": true
+        content: "'Wow! You're pretty good at this for a woman!'",
+        votes: 0,
+        isAppropriate: true
     },
     {
         "content": "'Can you show me where the developers work?'",
