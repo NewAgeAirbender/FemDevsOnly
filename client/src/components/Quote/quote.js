@@ -1,38 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import "./quote.css";
-import { Jumbotron, Button, Container, Row, Col } from 'reactstrap';
-import quotes from "../../../scripts/quotesDB.js";
+import { Button, Container } from 'reactstrap';
 
-class Landing extends Component {
-    state = {
-        quotes,
-        quote: "",
-    };
-    componentDidMount() {
-        this.getRandQuote();
-    };
+export const Quote = props => (
+    <Container className="asymmetric">
 
-    getRandQuote = () => {
-        this.setState({
-            quote: quotes[Math.floor(Math.random() * quotes.length)],
-        })
-    };
-    render() {
-        return (
-            <div>
-                <Container className="asymmetric">
-                   
-                        <h1 className="fem">FEM DEVS ONLY
+        <h1 className="fem">FEM DEVS ONLY
                         </h1>
-                        <p>{this.state.quote}</p>
-                        <p className="lead">
-                            <Button color="primary" onClick={this.getRandQuote}>wow. that was terrible. show me another</Button>
-                        </p>
-    
-                </Container>
-            </div >
-        );
-    };
-};
+        <p>{this.state.quote}</p>
+        <p className="lead">
+            <Button color="primary" onClick={this.getRandQuote}>wow. that was terrible. show me another</Button>
+        </p>
 
-export default Landing;
+    </Container>
+);
